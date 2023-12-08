@@ -1,91 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="manifest" href="/assets/site.webmanifest">
-    <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/assets/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/assets/apple-touch-icon.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/assets/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/assets/favicon-16x16.png" />
+		<link rel="manifest" href="/assets/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="/assets/safari-pinned-tab.svg"
+			color="#5bbad5" />
+		<link rel="shortcut icon" href="/assets/favicon.ico" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="msapplication-config" content="/assets/browserconfig.xml" />
+		<meta name="theme-color" content="#ffffff" />
 
-    <title>Marc Lucraft</title>
-    
-    <script src="https://kit.fontawesome.com/4248b457ae.js" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-    <link rel="stylesheet" href="assets/styles.css">
-</head>
+		<title>Marc Lucraft</title>
 
-<body>
-    <div id="wrapper">
-        <div id="header">
-            <h1 class="type">Hi, I'm Marc.</h1>
-            <span id="down"><i class="fas fa-arrow-down"></i></span>
-        </div>
-        <div id="about">
-            <p>Passionate about all things tech, with the drive to learn new things quickly. Experienced in Digital Design, Development, Project Management and Customer Support. Expansive knowledge of design software (Adobe CC, Sketch, Affinity), and web languages (JavaScript, APIs, HTML, CSS).</p>
-            <p>Find me on <a
-                    href="https://www.linkedin.com/in/marc-lucraft-b4890a1a2/">LinkedIn</a>.</p>
-        </div>
-        <div id="work">
-            <div class="gallery">
-                <figure>
-                    <a href="https://www.youtube.com/watch?v=tHI3xe3a2BQ" class="glightbox">
-                        <img src="assets/crowlands.jpg" alt="Golfing man in backswing">
-                    </a>>
-                </figure>
-                <figure>
-                    <a href="assets/itc.jpg" class="glightbox">
-                        <img src="assets/itc.jpg" alt="ITC Website on Macbook">
-                    </a>>
-                </figure>
-                <figure>
-                    <a href="assets/jg.jpg" class="glightbox">
-                        <img src="assets/jg.jpg" alt="JG Design and Build logo">
-                    </a>>
-                </figure>
-                <figure>
-                    <a href="assets/kidsfest.jpg" class="glightbox">
-                        <img src="assets/kidsfest.jpg" alt="Flyer from sellout event, KidsFest">
-                    </a>>
-                </figure>
-                <figure>
-                    <a href="assets/brochure2.jpg" class="glightbox">
-                        <img src="assets/brochure1.jpg" alt="Covers of course booklets">
-                    </a>>
-                </figure>
-                <figure>
-                    <a href="assets/farrell.jpg" class="glightbox">
-                        <img src="assets/farrell.jpg" alt="Farrell Physiotherapy Roller Banner in busy entrance">
-                    </a>>
-                </figure>
-                <figure>
-                    <a href="assets/roi2.jpg" class="glightbox">
-                        <img src="assets/roi1.jpg" alt="ROI Website on an iMac">
-                    </a>>
-                </figure>
-                <figure>
-                    <a href="assets/randb.jpg" class="glightbox">
-                        <img src="assets/randb.jpg" alt="R & B Bathroom and Tiling Installations logo">
-                    </a>>
-                </figure>
-                <figure>
-                    <a href="https://www.youtube.com/watch?v=ue_DnGeMpAY" class="glightbox">
-                        <img src="assets/lambo.jpg" alt="lamborghini Urus in Showroom">
-                    </a>>
-                </figure>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <script src="assets/scripts.js"></script>
-</body>
+		<script
+			src="https://kit.fontawesome.com/4248b457ae.js"
+			crossorigin="anonymous"></script>
 
+		<link rel="stylesheet" href="assets/styles.css" />
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h1 class="type">Hi, I'm Marc.</h1>
+				<span id="down"><i class="fas fa-arrow-down"></i></span>
+			</div>
+			<div id="about">
+				<p>
+					Passionate about all things tech, with the drive to learn new things
+					quickly. Experienced in Digital Design, Development, Project
+					Management and Customer Support. Expansive knowledge of design
+					software (Adobe CC, Sketch, Affinity), and web languages (JavaScript,
+					APIs, HTML, CSS).
+				</p>
+				<p>
+					Find me on
+					<a href="https://www.linkedin.com/in/marclucraft/">LinkedIn</a>.
+				</p>
+			</div>
+		</div>
+		<script>
+			document.querySelector('#down').addEventListener('click', e => {
+				document.querySelector('#about').scrollIntoView({
+					behavior: 'smooth',
+				});
+			});
+		</script>
+	</body>
 </html>
